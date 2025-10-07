@@ -51,7 +51,7 @@ graph TD
     M --> N
 ```
 
-###Sequence Diagram
+### Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -75,9 +75,9 @@ sequenceDiagram
     F-->>U: Уведомление об успехе
 ```
 
-##Workflow процессы
+## Workflow процессы
 
-###Workflow: Регистрация пользователя
+### Workflow: Регистрация пользователя
 
 ```mermaid
 flowchart TD
@@ -95,7 +95,7 @@ flowchart TD
     J --> K[Конец]
 ```
 
-###Workflow: Создание нового проекта
+### Workflow: Создание нового проекта
 
 ```mermaid
 flowchart LR
@@ -109,7 +109,7 @@ flowchart LR
     G --> H[Конец]
 ```
 
-###Workflow: Добавление дефекта
+### Workflow: Добавление дефекта
 
 ```mermaid
 flowchart TD
@@ -124,7 +124,7 @@ flowchart TD
     H --> I[Конец]
 ```
 
-###Workflow: Выбор ответственного за дефект
+### Workflow: Выбор ответственного за дефект
 
 ```mermaid
 flowchart TD
@@ -140,7 +140,7 @@ flowchart TD
     I --> J[Конец]
 ```
 
-###Workflow: Новый дефект (полный цикл)
+### Workflow: Новый дефект (полный цикл)
 
 ```mermaid
 flowchart TB
