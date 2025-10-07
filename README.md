@@ -50,7 +50,9 @@ graph TD
     L --> N
     M --> N
 ```
+
 ###Sequence Diagram
+
 ```mermaid
 sequenceDiagram
     participant U as Пользователь
@@ -74,7 +76,9 @@ sequenceDiagram
 ```
 
 ##Workflow процессы
+
 ###Workflow: Регистрация пользователя
+
 ```mermaid
 flowchart TD
     A[Начало] --> B[Открытие формы регистрации]
@@ -92,6 +96,7 @@ flowchart TD
 ```
 
 ###Workflow: Создание нового проекта
+
 ```mermaid
 flowchart LR
     A[Начало] --> B[Нажать Создать проект]
@@ -105,6 +110,7 @@ flowchart LR
 ```
 
 ###Workflow: Добавление дефекта
+
 ```mermaid
 flowchart TD
     A[Начало] --> B[Выбор проекта]
@@ -119,6 +125,7 @@ flowchart TD
 ```
 
 ###Workflow: Выбор ответственного за дефект
+
 ```mermaid
 flowchart TD
     A[Начало] --> B[Просмотр списка дефектов]
@@ -134,6 +141,7 @@ flowchart TD
 ```
 
 ###Workflow: Новый дефект (полный цикл)
+
 ```mermaid
 flowchart TB
     A[Обнаружение дефекта] --> B[Создание записи дефекта]
