@@ -1,22 +1,8 @@
-export type Role = 'engineer' | 'manager' | 'viewer';
+// lib/types.ts
+export type Role = "engineer" | "manager" | "viewer";
 
-export interface User {
-    id: number;
-    name: string;
-    role: Role;
-    phone?: string;
-}
-
-export interface Project {
-    id: number;
-    name: string;
-    stage: string;
-    location?: string;
-    managerId?: number;
-}
-
-export type DefectStatus = 'new' | 'in_progress' | 'review' | 'closed' | 'cancelled';
-export type Priority = 'low' | 'medium' | 'high';
+export type DefectStatus = "new" | "in_progress" | "review" | "closed" | "cancelled";
+export type Priority = "low" | "medium" | "high";
 
 export interface Attachment {
     id: string;
@@ -26,7 +12,7 @@ export interface Attachment {
 
 export interface HistoryEntry {
     when: string;
-    who: number;
+    who: number; // user id
     action: string;
     note?: string;
 }
