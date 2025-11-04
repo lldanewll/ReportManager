@@ -1,6 +1,6 @@
 [
     {
-        "id": "D-1001",
+        "id": "1",
         "title": "Трещина в опалубке",
         "description": "Вертикальная трещина на северной стенке опалубки, длина ~0.5м.",
         "priority": "high",
@@ -25,7 +25,7 @@
         ]
     },
     {
-        "id": "D-1002",
+        "id": "2",
         "title": "Неправильная разметка труб",
         "description": "Разметка подводки водопровода не соответствует чертежам.",
         "priority": "medium",
@@ -34,7 +34,24 @@
         "assigneeId": 2,
         "createdAt": "2025-10-28T10:00:00.000Z",
         "dueDate": "2025-11-03T18:00:00.000Z",
-        "attachments": [],
-        "history": []
+        "attachments": [
+            {
+                "id": "a2",
+                "name": "photo2.jpg",
+                "url": "/mock/uploads/photo2.jpg"
+            }
+        ],
+        "history": [
+            {
+                "when": "2025-10-30T08:12:00.000Z",
+                "who": 2,
+                "action": "created"
+            },
+            {
+                "when": "2025-10-30T08:12:30.000Z",
+                "who": 2,
+                "action": "take"
+            }
+        ]
     }
 ]
