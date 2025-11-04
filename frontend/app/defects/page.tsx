@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import DefectCard from "@/components/defects/DefectCard";
 import FilterBar from "@/components/defects/FilterBar";
+import ModalCreate from "@/components/defects/CreateDefectModal"
 import type { Defect, DefectStatus, Priority } from "@/lib/types";
 
 export default function DefectsPage() {
@@ -40,7 +41,7 @@ export default function DefectsPage() {
                 onStatusChange={(s) => setStatusFilter(s)}
                 onPriorityChange={(p) => setPriorityFilter(p)}
             />
-
+            <ModalCreate onCreate={(newDefect) => setDefects(prev => [newDefect, ...prev])} />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filtered.map((d) => (
                     <DefectCard key={d.id} defect={d} />
