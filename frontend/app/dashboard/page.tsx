@@ -28,8 +28,7 @@ export default function DashboardPage() {
     setUserRole(role);
     setUserEmail(email);
   }, [router]);
-
-  // Загружаем данные после установки userRole
+  
   useEffect(() => {
     if (userRole) {
       loadData();
@@ -41,7 +40,6 @@ export default function DashboardPage() {
       console.log('🔄 Loading data for role:', userRole);
       setLoading(true);
       
-      // Загружаем engineers ПЕРВЫМИ для менеджера и директора
       if (userRole === 'manager' || userRole === 'director') {
         console.log('1. Loading engineers...');
         const engineersResponse = await fetch('/api/engineers');
@@ -52,12 +50,10 @@ export default function DashboardPage() {
           setEngineers(engineersData);
         } else {
           console.error('❌ Failed to load engineers, status:', engineersResponse.status);
-          // Устанавливаем пустой массив чтобы избежать ошибок
           setEngineers([]);
         }
       }
 
-      // Затем загружаем дефекты
       console.log('2. Loading defects...');
       const defectsResponse = await fetch('/api/defects');
       if (defectsResponse.ok) {
@@ -75,14 +71,12 @@ export default function DashboardPage() {
     }
   };
 
-  // Получаем ID текущего инженера
   const getCurrentEngineerId = () => {
     if (userRole !== 'engineer') return null;
     const engineerId = localStorage.getItem('engineerId');
     return engineerId ? parseInt(engineerId) : null;
   };
 
-  // Фильтруем дефекты для инженера
   const getFilteredDefects = () => {
     if (userRole === 'engineer') {
       const engineerId = getCurrentEngineerId();
@@ -93,12 +87,11 @@ export default function DashboardPage() {
   };
 
   const handleDefectUpdate = () => {
-    loadData(); // Перезагружаем данные при обновлении дефекта
+    loadData();
   };
 
   const handleAssignEngineer = (defect: Defect) => {
     console.log('Assign engineer for defect:', defect.id);
-    // Здесь будет логика открытия модалки назначения
   };
 
   if (!userRole || loading) {

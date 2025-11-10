@@ -18,7 +18,6 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  // Тестовые пользователи
   const testUsers: TestUser[] = [
     {
       email: "engineer1@example.com",
@@ -60,7 +59,6 @@ export default function LoginPage() {
     setLoading(true);
     setError("");
 
-    // Простая проверка - пароль всегда 12345
     if (password !== "12345") {
       setError("Неверный пароль");
       setLoading(false);
@@ -75,15 +73,13 @@ export default function LoginPage() {
       return;
     }
 
-    // Сохраняем данные
     localStorage.setItem('userRole', user.role);
     localStorage.setItem('userEmail', user.email);
     localStorage.setItem('userName', user.name);
     if (user.engineerId) {
       localStorage.setItem('engineerId', user.engineerId.toString());
     }
-    
-    // Редирект на дашборд
+  
     router.push('/dashboard');
     setLoading(false);
   };
@@ -148,8 +144,6 @@ export default function LoginPage() {
             {loading ? 'Вход...' : 'Войти'}
           </button>
         </form>
-
-        {/* Тестовые аккаунты */}
         <div className="mt-6">
           <div className="text-center text-sm text-gray-600 mb-3">
             Тестовые аккаунты (кликните для заполнения):

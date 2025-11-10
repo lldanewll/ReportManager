@@ -1,4 +1,3 @@
-// app/api/defects/route.ts
 import fs from "fs";
 import path from "path";
 import { NextResponse, NextRequest } from "next/server";
@@ -29,7 +28,6 @@ export async function PATCH(request: NextRequest, { params }: Params) {
       return NextResponse.json({ error: 'Дефект не найден' }, { status: 404 });
     }
     
-    // Обновляем статус
     defects[defectIndex] = { 
       ...defects[defectIndex], 
       status: status as DefectStatus,
@@ -37,7 +35,7 @@ export async function PATCH(request: NextRequest, { params }: Params) {
         ...defects[defectIndex].history,
         {
           when: new Date().toISOString(),
-          who: 1, // TODO: использовать ID текущего пользователя
+          who: 1,
           action: `status changed to: ${status}`
         }
       ]

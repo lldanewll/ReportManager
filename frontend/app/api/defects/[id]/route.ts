@@ -7,7 +7,6 @@ type Params = {
   params: Promise<{ id: string }>
 }
 
-// GET - получить дефект по ID
 export async function GET(request: NextRequest, { params }: Params) {
   try {
     const { id } = await params;
@@ -26,7 +25,6 @@ export async function GET(request: NextRequest, { params }: Params) {
   }
 }
 
-// PUT - обновить дефект
 export async function PUT(request: NextRequest, { params }: Params) {
   try {
     const { id } = await params;
@@ -43,7 +41,6 @@ export async function PUT(request: NextRequest, { params }: Params) {
       return NextResponse.json({ error: 'Дефект не найден' }, { status: 404 });
     }
     
-    // Обновляем дефект
     const updatedDefect = { 
       ...defects[defectIndex], 
       ...updates,

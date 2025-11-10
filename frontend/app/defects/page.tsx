@@ -24,8 +24,7 @@ export default function DefectsPage() {
         }
         setUserRole(role);
     }, [router]);
-
-    // Проверяем возможности
+    
     const canCreateDefects = userRole === 'engineer';
     const canEditDefects = userRole === 'manager' || userRole === 'engineer';
     const canViewOnly = userRole === 'director';
@@ -57,8 +56,6 @@ export default function DefectsPage() {
         <main className="p-6">
             <div className="flex justify-between items-center mb-6">
                 <h1 className="text-2xl font-bold">Дефекты</h1>
-                
-                {/* Кнопка создания только для инженера */}
                 {canCreateDefects && (
                     <button 
                         onClick={() => setShowCreateModal(true)}
@@ -67,8 +64,6 @@ export default function DefectsPage() {
                         Создать дефект
                     </button>
                 )}
-                
-                {/* Для руководителя показываем инфо */}
                 {canViewOnly && (
                     <div className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded">
                         👑 Режим просмотра
@@ -82,16 +77,12 @@ export default function DefectsPage() {
                 onStatusChange={(s) => setStatusFilter(s)}
                 onPriorityChange={(p) => setPriorityFilter(p)}
             />
-
-            {/* Модалка создания дефекта */}
             {showCreateModal && (
                 <ModalCreate 
                     onCreate={handleCreateDefect}
                     onClose={() => setShowCreateModal(false)}
                 />
             )}
-
-            {/* Статистика по фильтрам */}
             <div className="mb-4 text-sm text-gray-600">
                 Показано {filtered.length} из {defects.length} дефектов
                 {(statusFilter || priorityFilter) && (
