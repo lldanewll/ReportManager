@@ -1,57 +1,240 @@
 [
-    {
-        "id": "1",
-        "title": "Трещина в опалубке",
-        "description": "Вертикальная трещина на северной стенке опалубки, длина ~0.5м.",
-        "priority": "high",
-        "status": "new",
-        "projectId": 101,
-        "assigneeId": 1,
-        "createdAt": "2025-10-30T08:12:00.000Z",
-        "dueDate": "2025-11-07T23:59:00.000Z",
-        "attachments": [
-            {
-                "id": "a1",
-                "name": "photo1.jpg",
-                "url": "/mock/uploads/photo1.jpg"
-            }
-        ],
-        "history": [
-            {
-                "when": "2025-10-30T08:12:00.000Z",
-                "who": 1,
-                "action": "created"
-            }
-        ]
-    },
-    {
-        "id": "2",
-        "title": "Неправильная разметка труб",
-        "description": "Разметка подводки водопровода не соответствует чертежам.",
-        "priority": "medium",
-        "status": "in_progress",
-        "projectId": 102,
-        "assigneeId": 2,
-        "createdAt": "2025-10-28T10:00:00.000Z",
-        "dueDate": "2025-11-03T18:00:00.000Z",
-        "attachments": [
-            {
-                "id": "a2",
-                "name": "photo2.jpg",
-                "url": "/mock/uploads/photo2.jpg"
-            }
-        ],
-        "history": [
-            {
-                "when": "2025-10-30T08:12:00.000Z",
-                "who": 2,
-                "action": "created"
-            },
-            {
-                "when": "2025-10-30T08:12:30.000Z",
-                "who": 2,
-                "action": "take"
-            }
-        ]
-    }
+  {
+    "id": "D-1762758289280",
+    "title": "Трещина в ванной",
+    "description": "В ванной комнате трещина в кафеле ",
+    "priority": "low",
+    "status": "new",
+    "projectId": 101,
+    "createdAt": "2025-11-10T07:04:49.280Z",
+    "dueDate": "2025-10-10",
+    "attachments": [
+      {
+        "id": "2d18bf49-5121-4f76-a6f4-fbefbeeebd08",
+        "filename": "lesh.jpg",
+        "url": "/uploads/086121cf-ecaf-4d8c-b567-95df460ec94c.jpg",
+        "uploadedAt": "2025-11-10T07:05:17.759Z",
+        "uploadedBy": 1
+      }
+    ],
+    "history": [
+      {
+        "when": "2025-11-10T07:04:49.280Z",
+        "who": 1,
+        "action": "created"
+      },
+      {
+        "when": "2025-11-10T07:05:01.190Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      }
+    ],
+    "assigneeId": 3
+  },
+  {
+    "id": "D-1762752951042",
+    "title": "ААА",
+    "description": "пипец",
+    "priority": "medium",
+    "status": "inProgress",
+    "projectId": 101,
+    "createdAt": "2025-11-10T05:35:51.042Z",
+    "dueDate": "2025-02-10",
+    "attachments": [
+      {
+        "id": "9b5375bd-b051-4b05-b9b1-f505bc6c9a58",
+        "filename": "photo_2024-09-02_01-04-54.jpg",
+        "url": "/uploads/fd96d0d8-d959-48b4-99db-48988493ff26.jpg",
+        "uploadedAt": "2025-11-10T07:02:49.718Z",
+        "uploadedBy": 1
+      }
+    ],
+    "history": [
+      {
+        "when": "2025-11-10T05:35:51.042Z",
+        "who": 1,
+        "action": "created"
+      },
+      {
+        "when": "2025-11-10T05:59:17.671Z",
+        "who": 1,
+        "action": "updated: title, description, priority, dueDate"
+      },
+      {
+        "when": "2025-11-10T05:59:33.302Z",
+        "who": 1,
+        "action": "updated: title, description, priority, dueDate"
+      },
+      {
+        "when": "2025-11-10T05:59:48.614Z",
+        "who": 1,
+        "action": "updated: title, description, priority, dueDate"
+      },
+      {
+        "when": "2025-11-10T07:02:27.711Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      },
+      {
+        "when": "2025-11-10T07:05:23.981Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      }
+    ],
+    "assigneeId": 3
+  },
+  {
+    "id": "D-1",
+    "title": "Трещина в стене",
+    "description": "Вертикальная трещина на северной стене, длина ~0.5м",
+    "priority": "high",
+    "status": "resolved",
+    "projectId": 101,
+    "assigneeId": 2,
+    "createdAt": "2024-01-15T08:00:00.000Z",
+    "dueDate": "2024-01-25T23:59:00.000Z",
+    "attachments": [
+      {
+        "id": "3c1506e3-1e5f-4877-959f-141d1b554207",
+        "filename": "Снимок экрана 2025-07-01 005434.png",
+        "url": "/uploads/a1311b41-3117-4e9e-b2c2-52e7b0a33b1a.png",
+        "uploadedAt": "2025-11-10T07:02:03.972Z",
+        "uploadedBy": 1
+      }
+    ],
+    "history": [
+      {
+        "when": "2024-01-15T08:00:00.000Z",
+        "who": 1,
+        "action": "created"
+      },
+      {
+        "when": "2025-11-10T05:42:18.383Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      },
+      {
+        "when": "2025-11-10T05:59:54.204Z",
+        "who": 1,
+        "action": "status changed to: resolved"
+      },
+      {
+        "when": "2025-11-10T06:26:26.281Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      },
+      {
+        "when": "2025-11-10T06:27:35.522Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      },
+      {
+        "when": "2025-11-10T06:29:13.136Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      },
+      {
+        "when": "2025-11-10T06:42:58.440Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      }
+    ]
+  },
+  {
+    "id": "D-2",
+    "title": "Протечка труб",
+    "description": "Постоянная протечка в системе водоснабжения",
+    "priority": "high",
+    "status": "inProgress",
+    "projectId": 101,
+    "assigneeId": 1,
+    "createdAt": "2024-01-10T10:30:00.000Z",
+    "dueDate": "2024-01-20T23:59:00.000Z",
+    "attachments": [
+      {
+        "id": "e80c6955-d456-4e8d-944e-66bc027a84df",
+        "filename": "sticker.jpg",
+        "url": "/uploads/e4efe90e-82a1-40f5-967d-b873d1132cc6.jpg",
+        "uploadedAt": "2025-11-10T07:00:53.874Z",
+        "uploadedBy": 1
+      }
+    ],
+    "history": [
+      {
+        "when": "2024-01-10T10:30:00.000Z",
+        "who": 1,
+        "action": "created"
+      },
+      {
+        "when": "2024-01-12T14:20:00.000Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      },
+      {
+        "when": "2025-11-10T05:33:56.023Z",
+        "who": 1,
+        "action": "status changed to: closed"
+      },
+      {
+        "when": "2025-11-10T05:33:59.224Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      },
+      {
+        "when": "2025-11-10T05:34:02.704Z",
+        "who": 1,
+        "action": "status changed to: resolved"
+      },
+      {
+        "when": "2025-11-10T05:34:03.944Z",
+        "who": 1,
+        "action": "status changed to: closed"
+      },
+      {
+        "when": "2025-11-10T05:34:05.021Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      },
+      {
+        "when": "2025-11-10T05:34:06.153Z",
+        "who": 1,
+        "action": "status changed to: resolved"
+      },
+      {
+        "when": "2025-11-10T05:34:08.130Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      },
+      {
+        "when": "2025-11-10T05:35:15.110Z",
+        "who": 1,
+        "action": "status changed to: closed"
+      },
+      {
+        "when": "2025-11-10T05:39:42.047Z",
+        "who": 1,
+        "action": "updated: title, description, priority, dueDate"
+      },
+      {
+        "when": "2025-11-10T05:58:43.997Z",
+        "who": 1,
+        "action": "status changed to: inProgress"
+      },
+      {
+        "when": "2025-11-10T06:22:34.973Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      },
+      {
+        "when": "2025-11-10T06:23:09.206Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      },
+      {
+        "when": "2025-11-10T06:26:07.763Z",
+        "who": 1,
+        "action": "updated: assigneeId"
+      }
+    ]
+  }
 ]

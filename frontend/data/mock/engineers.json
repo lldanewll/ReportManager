@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Алексей Петров",
+    "email": "engineer1@example.com",
+    "specialization": "Строительные работы"
+  },
+  {
+    "id": 2,
+    "name": "Иван Сидоров", 
+    "email": "engineer2@example.com",
+    "specialization": "Электромонтаж"
+  },
+  {
+    "id": 3,
+    "name": "Мария Иванова",
+    "email": "engineer3@example.com", 
+    "specialization": "Отделочные работы"
+  }
+]

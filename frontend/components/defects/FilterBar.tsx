@@ -15,7 +15,7 @@ export default function FilterBar({
     onPriorityChange: (p: Priority | "") => void;
 }) {
     return (
-        <div className="flex gap-2 items-center mb-4">
+        <div className="flex gap-2 text-black items-center mb-4">
             <select
                 value={status}
                 onChange={(e) => onStatusChange(e.target.value as DefectStatus | "")}
